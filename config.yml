@@ -1,0 +1,47 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  data:
+    db.user.name: bWF0dGhpYXM=
+    db.user.password: cGFzc3dvcmQ=
+  kind: Secret
+  metadata:
+    creationTimestamp: 2019-02-20T08:43:19Z
+    name: db-security
+    namespace: default
+    resourceVersion: "2818"
+    selfLink: /api/v1/namespaces/default/secrets/db-security
+    uid: 9294d794-34eb-11e9-ad87-0242ac110041
+  type: Opaque
+- apiVersion: v1
+  data:
+    ca.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRFNU1ESXlNREE0TVRNeU9Wb1hEVEk1TURJeE56QTRNVE15T1Zvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBT1g4CnZwc3B4UDlqcy90NEVieTFOZFMxQ2lmRUZoVVdWTFRRWUlrbFFRb24wdmV6WjBDOC9UTjdXYUxmU2N5aXVoNFMKL2VhNTZzdEdkY2MxUnpEeDg5ZHRsbUVvYzNaMHQyQUR2RjhvN2JGMGgwZmx5ZW52dWgrekhkak1YY0ZncG1GRgpzY2w2MUY3RTluMmRNQUlIUHJ2MjFBcDJoZVU0cWlKdmNFYUpKQy8zRXhaOW5DUDZHQ0lvbC93QitUZ2lUckxoCnNnUnUrY3YvWE1TNTB2eVh2Kyt5dVBJdXgvL0hXSmlvUmR3azdOa0tDaiswU2JqRGNUTi8yV0lEeTR6MTlNSmkKQTIxNm1ESGhRZVlIc1hib21iaDY2OVVJa2JvMEZ2U1ZhaDY3Vm9iamNCK2ZtcUgyZ1l0NTQxcHZ1Z2dCY2JoaApQV1dVcGFNdklyR1VuUkZMa0M4Q0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFPVnJnMmVqcDBnWFFhTFRlWHBYOGJ3RDB0V2oKV2RXTm5tbVdZM1VFd211dU5PQ3VRMEJOcE5hczNBRDA3MDRjUStJOHptcm8vRHUwVWNZVWZkNllmU3lqZzJRaApJbTVkM1R0QmQyWU1NMlZNWVpWZzU4UGg5amNrZXFkQzlYR0hlU2F0aUJJWlhBVUVlOFM5OWowUERYS0djZjVBCnJxVmNUSERjMTFndE5reXd4VU5uZm1FNm5GcnJlcGtrZ29BUUsvQnVDcUdnL041ZHVKMjVESTYrYitFWUZVV3EKaTZrQzJBVXBFQTB3c0JPMi9CM21Vcmg1VDlPdVhPcFc2cXRPUCszR1d6clJUd1F0R0thN0VjVW8vN2Qxbk1IaAplc1lHSVZ6QU1iWE5EbjcyTjlId05nTnNJQ1o5eUtxdTlQcldwb3dDeEU3bEJkMEZSNDFOclpJRkdkMD0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+    namespace: ZGVmYXVsdA==
+    token: ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklpSjkuZXlKcGMzTWlPaUpyZFdKbGNtNWxkR1Z6TDNObGNuWnBZMlZoWTJOdmRXNTBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5dVlXMWxjM0JoWTJVaU9pSmtaV1poZFd4MElpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzl6WldOeVpYUXVibUZ0WlNJNkltUmxabUYxYkhRdGRHOXJaVzR0YkRKMmNXSWlMQ0pyZFdKbGNtNWxkR1Z6TG1sdkwzTmxjblpwWTJWaFkyTnZkVzUwTDNObGNuWnBZMlV0WVdOamIzVnVkQzV1WVcxbElqb2laR1ZtWVhWc2RDSXNJbXQxWW1WeWJtVjBaWE11YVc4dmMyVnlkbWxqWldGalkyOTFiblF2YzJWeWRtbGpaUzFoWTJOdmRXNTBMblZwWkNJNklqZzFaVGMxWVRoa0xUTTBaVGN0TVRGbE9TMWhaRGczTFRBeU5ESmhZekV4TURBME1TSXNJbk4xWWlJNkluTjVjM1JsYlRwelpYSjJhV05sWVdOamIzVnVkRHBrWldaaGRXeDBPbVJsWm1GMWJIUWlmUS5iS05QemZTRE9nRC1aR251UGkxcXh0YmF6UzBNbE9LQlNyT1B1a01kS3BZYWZJa1l0WVhxX2l1U0pXSFVCS1FJM2EzT2NkcjNjbjZoSWtWa0k4THU0RkdYejN6SXdTUGVwNF8tV29yWFJQSjZCaXhCbWloOGdmeFp3aVZtVDR1QWt3RGlhS2pSQWNrSmxwMmpPRC1uM1NNamQ2U2ZqUk8tenRBY2xCM2NvalF0Tll3Y3FxWDhqWVpIMHFzb2dobFpHc1l4MTRqVFo4ckw4dmU0VzJpWnU1YWVVR01Vb2RvWjRXMWpTOGVRQkctZW9tcVhTWi11R2JCNU1GTkpJTWw5VGYxeUdDT2FiVlpXcml2aXA5V0x1Z2F6MG9TRTRIQ3JMYmVyYVE0eEQtMEY2Sl85bG5JU1lBOWJoZGtPYU5WaUtVcWFCeDR1enVIRGZLa1ZsRG1CWmc=
+  kind: Secret
+  metadata:
+    annotations:
+      kubernetes.io/service-account.name: default
+      kubernetes.io/service-account.uid: 85e75a8d-34e7-11e9-ad87-0242ac110041
+    creationTimestamp: 2019-02-20T08:14:20Z
+    name: default-token-l2vqb
+    namespace: default
+    resourceVersion: "327"
+    selfLink: /api/v1/namespaces/default/secrets/default-token-l2vqb
+    uid: 85e9fa8c-34e7-11e9-ad87-0242ac110041
+  type: kubernetes.io/service-account-token
+- apiVersion: v1
+  data:
+    postgres.db.name: mydb
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: 2019-02-20T08:38:52Z
+    name: postgres-config
+    namespace: default
+    resourceVersion: "2471"
+    selfLink: /api/v1/namespaces/default/configmaps/postgres-config
+    uid: f3c1fc0f-34ea-11e9-ad87-0242ac110041
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""

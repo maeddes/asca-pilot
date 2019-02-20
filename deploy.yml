@@ -1,0 +1,325 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    creationTimestamp: 2019-02-20T08:21:29Z
+    generateName: sampleapp-6bc798c9cb-
+    labels:
+      pod-template-hash: "2673547576"
+      run: sampleapp
+    name: sampleapp-6bc798c9cb-nrfcx
+    namespace: default
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: ReplicaSet
+      name: sampleapp-6bc798c9cb
+      uid: 85ef3191-34e8-11e9-ad87-0242ac110041
+    resourceVersion: "1062"
+    selfLink: /api/v1/namespaces/default/pods/sampleapp-6bc798c9cb-nrfcx
+    uid: 85f13673-34e8-11e9-ad87-0242ac110041
+  spec:
+    containers:
+    - image: mirna/todoapp:v1
+      imagePullPolicy: IfNotPresent
+      name: sampleapp
+      resources: {}
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: default-token-l2vqb
+        readOnly: true
+    dnsPolicy: ClusterFirst
+    nodeName: node01
+    priority: 0
+    restartPolicy: Always
+    schedulerName: default-scheduler
+    securityContext: {}
+    serviceAccount: default
+    serviceAccountName: default
+    terminationGracePeriodSeconds: 30
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+    volumes:
+    - name: default-token-l2vqb
+      secret:
+        defaultMode: 420
+        secretName: default-token-l2vqb
+  status:
+    conditions:
+    - lastProbeTime: null
+      lastTransitionTime: 2019-02-20T08:21:29Z
+      status: "True"
+      type: Initialized
+    - lastProbeTime: null
+      lastTransitionTime: 2019-02-20T08:21:38Z
+      status: "True"
+      type: Ready
+    - lastProbeTime: null
+      lastTransitionTime: null
+      status: "True"
+      type: ContainersReady
+    - lastProbeTime: null
+      lastTransitionTime: 2019-02-20T08:21:29Z
+      status: "True"
+      type: PodScheduled
+    containerStatuses:
+    - containerID: docker://92453d0424fc007fef31b70f77b0685d2c4e2956e9d663236279e38d24e3cd08
+      image: mirna/todoapp:v1
+      imageID: docker-pullable://mirna/todoapp@sha256:58295ca8a564fc316b1f56821f78aeedd376307f19e0ec39ca447c026030ab31
+      lastState: {}
+      name: sampleapp
+      ready: true
+      restartCount: 0
+      state:
+        running:
+          startedAt: 2019-02-20T08:21:38Z
+    hostIP: 172.17.0.71
+    phase: Running
+    podIP: 10.32.0.5
+    qosClass: BestEffort
+    startTime: 2019-02-20T08:21:29Z
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    creationTimestamp: 2019-02-20T08:21:29Z
+    generateName: sampleapp-6bc798c9cb-
+    labels:
+      pod-template-hash: "2673547576"
+      run: sampleapp
+    name: sampleapp-6bc798c9cb-nsjsw
+    namespace: default
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: ReplicaSet
+      name: sampleapp-6bc798c9cb
+      uid: 85ef3191-34e8-11e9-ad87-0242ac110041
+    resourceVersion: "1054"
+    selfLink: /api/v1/namespaces/default/pods/sampleapp-6bc798c9cb-nsjsw
+    uid: 85f0b700-34e8-11e9-ad87-0242ac110041
+  spec:
+    containers:
+    - image: mirna/todoapp:v1
+      imagePullPolicy: IfNotPresent
+      name: sampleapp
+      resources: {}
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: default-token-l2vqb
+        readOnly: true
+    dnsPolicy: ClusterFirst
+    nodeName: node01
+    priority: 0
+    restartPolicy: Always
+    schedulerName: default-scheduler
+    securityContext: {}
+    serviceAccount: default
+    serviceAccountName: default
+    terminationGracePeriodSeconds: 30
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+    volumes:
+    - name: default-token-l2vqb
+      secret:
+        defaultMode: 420
+        secretName: default-token-l2vqb
+  status:
+    conditions:
+    - lastProbeTime: null
+      lastTransitionTime: 2019-02-20T08:21:29Z
+      status: "True"
+      type: Initialized
+    - lastProbeTime: null
+      lastTransitionTime: 2019-02-20T08:21:37Z
+      status: "True"
+      type: Ready
+    - lastProbeTime: null
+      lastTransitionTime: null
+      status: "True"
+      type: ContainersReady
+    - lastProbeTime: null
+      lastTransitionTime: 2019-02-20T08:21:29Z
+      status: "True"
+      type: PodScheduled
+    containerStatuses:
+    - containerID: docker://92333579f8312d7ff11d4e2276e1de436dd9fd94d92a09246182e213f2002f38
+      image: mirna/todoapp:v1
+      imageID: docker-pullable://mirna/todoapp@sha256:58295ca8a564fc316b1f56821f78aeedd376307f19e0ec39ca447c026030ab31
+      lastState: {}
+      name: sampleapp
+      ready: true
+      restartCount: 0
+      state:
+        running:
+          startedAt: 2019-02-20T08:21:37Z
+    hostIP: 172.17.0.71
+    phase: Running
+    podIP: 10.32.0.4
+    qosClass: BestEffort
+    startTime: 2019-02-20T08:21:29Z
+- apiVersion: v1
+  kind: Service
+  metadata:
+    creationTimestamp: 2019-02-20T08:14:10Z
+    labels:
+      component: apiserver
+      provider: kubernetes
+    name: kubernetes
+    namespace: default
+    resourceVersion: "6"
+    selfLink: /api/v1/namespaces/default/services/kubernetes
+    uid: 800563c6-34e7-11e9-ad87-0242ac110041
+  spec:
+    clusterIP: 10.96.0.1
+    ports:
+    - name: https
+      port: 443
+      protocol: TCP
+      targetPort: 6443
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: 2019-02-20T08:21:29Z
+    generation: 1
+    labels:
+      run: sampleapp
+    name: sampleapp
+    namespace: default
+    resourceVersion: "1064"
+    selfLink: /apis/apps/v1/namespaces/default/deployments/sampleapp
+    uid: 85ec7d36-34e8-11e9-ad87-0242ac110041
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 2
+    revisionHistoryLimit: 2
+    selector:
+      matchLabels:
+        run: sampleapp
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          run: sampleapp
+      spec:
+        containers:
+        - image: mirna/todoapp:v1
+          imagePullPolicy: IfNotPresent
+          name: sampleapp
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 2
+    conditions:
+    - lastTransitionTime: 2019-02-20T08:21:38Z
+      lastUpdateTime: 2019-02-20T08:21:38Z
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: 2019-02-20T08:21:29Z
+      lastUpdateTime: 2019-02-20T08:21:38Z
+      message: ReplicaSet "sampleapp-6bc798c9cb" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 1
+    readyReplicas: 2
+    replicas: 2
+    updatedReplicas: 2
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "2"
+      deployment.kubernetes.io/max-replicas: "3"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: 2019-02-20T08:21:29Z
+    generation: 1
+    labels:
+      pod-template-hash: "2673547576"
+      run: sampleapp
+    name: sampleapp-6bc798c9cb
+    namespace: default
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: sampleapp
+      uid: 85ec7d36-34e8-11e9-ad87-0242ac110041
+    resourceVersion: "1063"
+    selfLink: /apis/apps/v1/namespaces/default/replicasets/sampleapp-6bc798c9cb
+    uid: 85ef3191-34e8-11e9-ad87-0242ac110041
+  spec:
+    replicas: 2
+    selector:
+      matchLabels:
+        pod-template-hash: "2673547576"
+        run: sampleapp
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          pod-template-hash: "2673547576"
+          run: sampleapp
+      spec:
+        containers:
+        - image: mirna/todoapp:v1
+          imagePullPolicy: IfNotPresent
+          name: sampleapp
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 2
+    fullyLabeledReplicas: 2
+    observedGeneration: 1
+    readyReplicas: 2
+    replicas: 2
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
